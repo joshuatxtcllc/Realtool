@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtool - Real Estate Investing Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Realtool</h1>
+    </header>
+
+    <main>
+        <section id="cma">
+            <h2>Comparative Market Analysis (CMA)</h2>
+            <input type="text" id="propertyAddress" placeholder="Enter property address">
+            <button onclick="performCMA()">Get CMA</button>
+            <div id="cmaResults"></div>
+        </section>
+
+        <section id="calculations">
+            <h2>Investment Calculations</h2>
+            <input type="number" id="purchasePrice" placeholder="Purchase Price">
+            <input type="number" id="rentalIncome" placeholder="Monthly Rental Income">
+            <input type="number" id="expenses" placeholder="Monthly Expenses">
+            <button onclick="calculateROI()">Calculate ROI</button>
+            <div id="calculationResults"></div>
+        </section>
+
+        <section id="research">
+            <h2>Market Research</h2>
+            <input type="text" id="marketLocation" placeholder="Enter location">
+            <button onclick="performResearch()">Research Market</button>
+            <div id="researchResults"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
